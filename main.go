@@ -2,12 +2,12 @@ package main
 
 import (
 	"fmt"
-	"os"
 )
 
 func main() {
-	if len(os.Args) != 2 {
-		os.Exit(1)
-	}
-	fmt.Println("it's over", os.Args[1])
+	power := 9000
+	fmt.Printf("default power: %d\n", power)
+
+	name, power := "Goku", 1000
+	fmt.Printf("%s's power is over %d\n", name, power)
 }
