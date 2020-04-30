@@ -1,13 +1,12 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
-	power := 9000
-	fmt.Printf("default power: %d\n", power)
-
-	name, power := "Goku", 1000
-	fmt.Printf("%s's power is over %d\n", name, power)
+	lookup := make(map[string]int, 100)
+	lookup["goku"] = 9000
+	power, exists := lookup["vegeda"]
+	total := len(lookup)
+	fmt.Println(power, exists)
+	fmt.Println(total)
 }
