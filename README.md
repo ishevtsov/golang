@@ -1,1 +1,1 @@
-# golang
+# Introducing Go
